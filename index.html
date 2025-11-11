@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Filter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pokédex Filter</h1>
+        <p>Filter through the Pokédex by type and search for your favorite pokemon!</p>
+    </header>
+
+    <main>
+        <section id="typeFilters">
+            <h2>Filter by Type</h2>
+            <div id="typeContainer"></div>
+        </section>
+
+        <p>Mark and search for pokemon that you've collected as you fill up your Pokédex!</p>
+        <section id="controls">
+            <div id="search">
+                <label>Pokemon Search: <input type="text" id="searchInput" placeholder="Search by name..." /></label>
+            </div>
+
+            <div id="collected">
+                <label id="collectedFilterLabel"><input type="checkbox" id="collectedFilter">Show Collected Only</label>
+            </div>
+        </section>
+
+        <section id="gallery"></section>
+
+        <p id="error" class="hidden"></p>
+    </main>
+    
+    <footer>
+        <p>API used: <a href="https://pokeapi.co" target="_blank">PokeAPI</a></p>
+    </footer>
+</body>
+</html>
