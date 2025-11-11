@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement("button");
             if (collected.has(pokemon.name)) {
                 button.textContent = "Collected";
+                button.classList.add("collected");
             } else {
                 button.textContent = "Mark as Collected";
             }
